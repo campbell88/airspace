@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { Map, GoogleApiWrapper, Marker, Polygon } from 'google-maps-react';
+import './App.css'
 
 export class MapContainer extends Component {
 
@@ -7,6 +8,7 @@ export class MapContainer extends Component {
     super(props);
 
   }
+
 
   render() {
     const polygonCoords = [
