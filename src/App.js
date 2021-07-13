@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Map, GoogleApiWrapper, Marker, Polygon } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker, Polygon, Polyline } from 'google-maps-react';
 import './App.css'
 
 export class MapContainer extends Component {
@@ -27,7 +27,7 @@ export class MapContainer extends Component {
         <Map
           google={this.props.google}
           className={"map"}
-          zoom={11}
+          zoom={13}
           initialCenter={{ lat: 42.220520, lng: -83.385307}}
         >
           <Polygon
@@ -36,6 +36,14 @@ export class MapContainer extends Component {
             strokeWeight={2}
             fillColor={"D3D3D3"}
             fillOpacity={0.35}
+          />
+          <Polyline 
+           path={[
+            {lat: 42.222149, lng: -83.396568},
+            {lat: 42.20995654939329, lng: -83.38743209838867}
+          ]}
+          options={{ editable: true, strokeColor: "#ff0000" }}
+          
           />
         </Map>
       </div>
