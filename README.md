@@ -1,4 +1,4 @@
-# Airspace Coding Challenge
+# Coding Challenge
 Deployed here: [https://shathar-website.web.app/]
 
 ![Alt Text](https://media.giphy.com/media/ete9HLBYGmXIY/giphy.gif)
